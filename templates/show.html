@@ -1,0 +1,15 @@
+{{ define "show" }}
+
+{{ template "header" }}
+
+    <main>
+        <div>
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Full_text }}</p>
+            <a href="/">Назад</a>
+        </div>
+    </main>
+    
+{{ template "footer" }}
+
+{{ end }}

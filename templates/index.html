@@ -1,0 +1,43 @@
+{{ define "index" }}
+
+{{ template "header" }}
+
+    <main>
+        <p class="description">That's main</p>
+        {{ range . }}
+        <div>
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Anons }}</p>
+            <a href="/post/{{ .Id }}">Ссылка на статью</a>
+        </div>
+        {{ else }}
+        <p>Статьей нет</p>
+
+        {{ end }}
+        <div class="items">
+            <div class="item">
+                <p>Item 1</p>
+                <p>Text about item 1</p>
+            </div>
+            <div class="item">
+                <p>Item 2</p>
+                <p>Text about item 2</p>
+            </div>
+            <div class="item">
+                <p>Item 3</p>
+                <p>Text about item 3</p>
+            </div>
+            <div class="item">
+                <p>Item 4</p>
+                <p>Text about item 4</p>
+            </div>
+            <div class="item">
+                <p>Item 5</p>
+                <p>Text about item 5</p>
+            </div>
+        </div>
+    </main>
+    
+{{ template "footer" }}
+
+{{ end }}

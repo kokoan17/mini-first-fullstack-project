@@ -1,0 +1,36 @@
+body {
+    background-color: #fff;
+}
+
+.description {
+    font-size: 2rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar li:hover {
+    color: rgb(94, 139, 25);
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 1rem;
+}
+
+.item {
+    padding: 13px;
+    border: solid 1px black;
+    border-radius: 20px;
+}
